@@ -11,9 +11,8 @@ let reducers = combineReducers({
   dietsPage: dietsReducer
 });
 
-
 let store = createStore(reducers);
 
-console.log(store.state)
+console.log(store.getState())
 
 export default store;

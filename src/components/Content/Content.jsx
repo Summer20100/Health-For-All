@@ -9,7 +9,7 @@ function Content(props) {
   return (
     <main className={ s.main }>
       <Routes>
-        <Route path='/vitamins' element={ <Vitamins store={ props.state }/> } />
+        <Route path='/vitamins' element={ <Vitamins store={ props.store }/> } />
         <Route path='/acids' element={ <Acids store={ props.state } /> } />
         <Route path='/suplimentes' element={ <Suplimentes store={ props.state } /> } />
         <Route path='/diets' element={ <Diets store={ props.state } /> } />
