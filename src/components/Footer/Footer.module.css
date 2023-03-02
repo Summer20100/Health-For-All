@@ -1,0 +1,8 @@
+.footer {
+  grid-area: Footer;
+  background-color: greenyellow;
+}
+
+/* .header img {
+  width: 50px;
+} */
