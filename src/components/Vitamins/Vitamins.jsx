@@ -1,12 +1,12 @@
 import s from './Vitamins.module.css';
-import Buttons from './Buttons/Buttons';
+import VitaminsContent from './VitaminsContent/VitaminsContent';
 
 
 function Vitamins(props) {
   return (
     <article className={ s.article }>
       <div className={ s.item }>
-        <Buttons state={ props.vitamins }/>
+        <VitaminsContent state={ props.state.vitamins }/>
         Витамины
       </div>
     </article>

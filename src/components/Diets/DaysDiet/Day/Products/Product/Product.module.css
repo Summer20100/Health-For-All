@@ -1,0 +1,8 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 5px;
+}

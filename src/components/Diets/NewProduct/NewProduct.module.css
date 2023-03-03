@@ -1,0 +1,21 @@
+.addProduct {
+  display: flex;
+  column-gap: 15px;
+  border-radius: 5px;
+  background-color: gray;
+  padding: 10px;
+}
+
+.select {
+  color: red;
+}
+
+.btn {
+  color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.vitamim {
+  
+}

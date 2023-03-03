@@ -10,7 +10,10 @@ function App(props) {
     <div className="app-wrapper">
       <Header />
       <Navbar />
-      <Content store={ props.store } />
+      <Content
+        state={ props.state } 
+        dispatch={ props.dispatch }
+        store = { props.store } />
       <Footer />      
     </div>
   );

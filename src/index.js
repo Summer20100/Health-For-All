@@ -7,12 +7,12 @@ import { BrowserRouter } from 'react-router-dom';
 import store from './redux/redux-store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 export const renderContent = (state) => {
   root.render(
     <BrowserRouter>
       <React.StrictMode>
         <App 
+          state= { state } 
           dispatch={ store.dispatch.bind(store) }
           store = { store }
         />

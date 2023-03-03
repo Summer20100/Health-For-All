@@ -9,10 +9,10 @@ function Content(props) {
   return (
     <main className={ s.main }>
       <Routes>
-        <Route path='/vitamins' element={ <Vitamins store={ props.store }/> } />
-        <Route path='/acids' element={ <Acids store={ props.state } /> } />
-        <Route path='/suplimentes' element={ <Suplimentes store={ props.state } /> } />
-        <Route path='/diets' element={ <Diets store={ props.state } /> } />
+        <Route path='/vitamins' element={ <Vitamins state={ props.state.vitaminsPage } /> } />
+        <Route path='/acids' element={ <Acids state={ props.state } /> } />
+        <Route path='/suplimentes' element={ <Suplimentes state={ props.state } /> } />
+        <Route path='/diets' element={ <Diets state={ props.state.dietsPage } /> } />
       </Routes>
     </main>
   )
