@@ -2,8 +2,12 @@
 
 # dependencies
 /node_modules
+/.config
+/.git
 /.pnp
 .pnp.js
+.replit
+replit.nix
 
 # testing
 /coverage

@@ -5,22 +5,9 @@ function VitaminsDescription(props) {
   let pathItem = '/vitamins/' + props.id;
   return (
     <Routes>
-      <Route path={ pathItem } element={ 
-
-          <div>{ props.description }</div>        
-
-      } />
+      <Route path={ pathItem } element={ <div>{ props.description }</div> } />
     </Routes>
   )
 };
 
 export default VitaminsDescription;
-
-
-// <Route path={ pathItem } element={ 
-      //   <div>
-        //   <div>{ props.fullName }</div>
-        //   <hr />
-        //   <div>{ props.description }</div>        
-        // </div>
-      // } />

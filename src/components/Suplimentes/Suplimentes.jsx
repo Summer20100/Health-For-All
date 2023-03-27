@@ -1,10 +1,11 @@
 import s from './Suplimentes.module.css';
+import SuplimentesContent from './SuplimentesContent/SuplimentesContent'
 
 function Suplimentes(props) {
   return (
-    <article className={ s.article }>
-      <div className={ s.item }>
-        БАДы
+    <article>
+      <div>
+        <SuplimentesContent suplimentes={ props.suplimentes } dispatch={ props.dispatch } />
       </div>
     </article>
   )

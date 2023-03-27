@@ -1,10 +1,11 @@
 import s from './Acids.module.css';
+import AcidsContentContainer from './AcidsContent/AcidsContentContainer'
 
 function Acids(props) {
   return (
-    <article className={ s.article }>
-      <div className={ s.item }>
-        Аминокислоты
+    <article>
+      <div>
+        <AcidsContentContainer />
       </div>
     </article>
   )

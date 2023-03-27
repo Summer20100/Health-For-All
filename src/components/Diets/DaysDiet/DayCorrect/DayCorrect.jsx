@@ -1,9 +1,9 @@
-import s from './Day.module.css';
-import Products from './Products/Products';
-import NewProduct from './NewProduct/NewProduct';
+import s from './DayCorrect.module.css';
+import Products from './../Day/Products/Products';
+import NewProduct from './../Day/NewProduct/NewProduct';
 
 
-function Day(props) {
+function DayCorrect(props) {
   const hower =(el) => {
     el.target.classList.toggle( s.active );
     const main = document.querySelector('main');
@@ -16,32 +16,25 @@ function Day(props) {
     // console.log( props.dayWeekFullName );
     // console.log( el );
   }
+
+  const sum = 500;
   
   return (
     <div>
-      <div className={ s.card }>
-        <div className={ s.dayCardHeader }>
-          <div>{ props.dayWeekFullName }</div>
-          <button className={ s.btn } onClick={ hower }>КОРР</button>
-        </div>
-        <Products productsDiet={ props.productsDiet } dispatch={ props.dispatch } />
-      </div>
-
-
-      
-{/*       <div data-dayWeekId={ props.dayWeekId } className={ s.card } onClick={ hower }>
+      <div data-dayWeekId={ props.dayWeekId } className={ s.card } >
         <div>{ props.dayWeekFullName }</div>
         <hr />
-        <NewProduct newProducts={ props.newProducts } dispatch={ props.dispatch } />
+        <NewProduct newProducts={ props.newProducts } dispatch={ props.dispatch } newVelueWeight={ props.newVelueWeight } newValueCalories={ props.newValueCalories } />
         <Products productsDiet={ props.productsDiet } dispatch={ props.dispatch } />
         <hr />
         <div>
           <div>Всего, кл.</div>
+          <div>{ sum }</div>
         </div>
-      </div> */}
-      
+        
+      </div>
     </div>
   )
 };
 
-export default Day;
+export default DayCorrect;

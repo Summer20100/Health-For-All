@@ -6,8 +6,8 @@ function Vitamins(props) {
   return (
     <article className={ s.article }>
       <div className={ s.item }>
-        <VitaminsContent state={ props.state.vitamins }/>
         Витамины
+        <VitaminsContent state={ props.vitamins }/>
       </div>
     </article>
   )

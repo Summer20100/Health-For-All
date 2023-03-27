@@ -1,10 +1,14 @@
 .header {
   grid-area: Header;
   background-color: olive;
+  display: flex;
+  align-items: center;
+/*   justify-content: space-between; */
 }
 
 .header img {
   width: 60px;
+  margin-right: 10px;
 }
 
 /* .header img {

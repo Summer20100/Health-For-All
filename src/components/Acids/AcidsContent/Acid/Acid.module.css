@@ -1,0 +1,23 @@
+.card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+  color: #000;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+span {
+  font-weight: 600;
+  color: red;
+}
+
+.name:after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #000;
+}

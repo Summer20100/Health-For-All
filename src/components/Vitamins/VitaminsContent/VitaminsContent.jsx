@@ -9,9 +9,9 @@ function VitaminsContent(props) {
   let vitaminsContent = props.state.map( c => <VitaminsDescription description={ c.description } id={ c.id } fullName={ c.fullName }/>);
   
   return (
-    <div>
-      { vitaminsElements }
-      { vitaminsContent }
+    <div className={ s.grid }>
+      <div>{ vitaminsElements }</div>
+      <div>{ vitaminsContent }</div>
     </div>
   )
 };

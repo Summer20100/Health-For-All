@@ -1,7 +1,7 @@
 
 
 let initialState = {
-  vitamins: [
+  suplimentes: [
     {
       id: 1,
       shortName: 'A',

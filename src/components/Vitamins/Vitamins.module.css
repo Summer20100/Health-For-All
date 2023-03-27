@@ -1,5 +1,6 @@
 .article {
-  background-color: greenyellow;
+  background-color: lightgray;
+  border-radius: 10px;
 }
 
 .item {

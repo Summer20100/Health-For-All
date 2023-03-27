@@ -1,7 +1,18 @@
-.btn {
-  color: red;
-}
-
 .vitamim {
   
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.active {
+  color: blueviolet;
+}
+
+.dialog {
+  color: black;
+  text-decoration: none;
 }

@@ -1,8 +1,7 @@
 .footer {
   grid-area: Footer;
-  background-color: greenyellow;
+  background-color: olive;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
-
-/* .header img {
-  width: 50px;
-} */

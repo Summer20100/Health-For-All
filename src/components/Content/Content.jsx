@@ -1,18 +1,21 @@
 import s from './Content.module.css';
 import { Route, Routes } from 'react-router-dom';
-import Vitamins from './../Vitamins/Vitamins';
+
+import AboutApp from './../AboutApp/AboutApp';
+import VitaminsContainer from './../Vitamins/VitaminsContainer';
 import Acids from './../Acids/Acids';
-import Suplimentes from './../Suplimentes/Suplimentes';
-import Diets from './../Diets/Diets';
+import SuplimentesContainer from './../Suplimentes/SuplimentesContainer';
+import DietsContainer from './../Diets/DietsContainer';
 
 function Content(props) {
   return (
     <main className={ s.main }>
       <Routes>
-        <Route path='/vitamins' element={ <Vitamins state={ props.state.vitaminsPage } /> } />
-        <Route path='/acids' element={ <Acids state={ props.state } /> } />
-        <Route path='/suplimentes' element={ <Suplimentes state={ props.state } /> } />
-        <Route path='/diets' element={ <Diets state={ props.state.dietsPage } /> } />
+        <Route path='/vitamins' element={ <VitaminsContainer /> } />
+        <Route path='/acids' element={ <Acids /> } />
+        <Route path='/suplimentes' element={ <SuplimentesContainer /> } />
+        <Route path='/diets' element={ <DietsContainer /> } />
+        <Route path='/' element={ <AboutApp /> } />
       </Routes>
     </main>
   )
